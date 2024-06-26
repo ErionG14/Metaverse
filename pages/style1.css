@@ -1,0 +1,116 @@
+#cover-images {
+  filter: brightness(60%);
+  opacity: 0.7;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: #121212; /* Dark background for the card */
+  color: #ffffff; /* Light text color for readability */
+  /* Add any other card-specific styles here */
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-dark-mode {
+  background-color: black;
+}
+
+
+.text-white-in-dark-mode {
+  color: white !important;
+}
+
+.nav-link {
+  margin: 5px 10px;
+}
+
+.nav-link.active {
+  margin: 5px 10px;
+}
+
+.toggle-mode {
+  margin-right: 10px;
+}
+
+.Print {
+  margin-right: 20px;
+}
+
+.bi {
+  font-size: 1.2rem;
+}
+
+.icon-white-in-dark-mode {
+  color: white !important;
+}
+
+.white-icon {
+  color: white;
+}
+
+.article {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s linear, transform 1.2s linear;
+}
+
+.show-article {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.borderless-card {
+  border: none !important;
+}
+.secondfooter {
+  background-color: rgba(212, 209, 209, 0.586);
+  text-align: center;
+  padding: 20px;
+}
+
+.change {
+  color: black;
+  padding: 10px;
+}
+
+#komente {
+  color: white;
+}
+
+#secondfooterlinks {
+  text-decoration: none;
+  color: rgb(173, 193, 230);
+}
+
+#secondfooterlinks:hover {
+  color: rgb(83, 133, 239);
+  transition: all .5s ease-in-out;
+}
+
+.padding{
+  padding-right: 5%;
+}
+
+@font-face {
+  font-family: "rMedium";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "rBold";
+  src: url("../fonts/static/Montserrat-Bold.ttf");
+}
+
+p, a {
+  font-family: 'rMedium';
+}
+
+h1, h2, h3 {
+  font-family: "rBold"; 
+}

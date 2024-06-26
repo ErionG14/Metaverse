@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Metaverse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-control {
+      margin-bottom: 1rem;
+    }
+
+    .btn-custom {
+      background-color: #343a40;
+      color: #fff;
+      border: none;
+      transition: all .5s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: #64696e;
+      color: #fff;
+      transition: all .5s ease-in-out;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img src="../Photos/meta.png" alt="" width="135" height="90"><br><br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tech.html">Technology</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Join us</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="toggle-mode btn rounded-circle" type="button"
+            style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+            <i class="bi bi-moon" style="font-size: 1.25rem;"></i>
+          </button>
+          <button class="Print btn rounded-circle" style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+            <i class="bi bi-printer"></i>
+          </button>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit"> <i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-5">
+      <article class="text-center">
+        <h2>Type your name and other information below</h2>
+      </article>
+      <form>
+        <div class="card mt-4">
+          <div class="card-body">
+            <h2 class="card-title text-center">User Information Form</h2>
+            <div class="mb-3">
+              <label for="Name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="Name" placeholder="Enter your name*">
+            </div>
+            <div class="mb-3">
+              <label for="Surname" class="form-label">Surname:</label>
+              <input type="text" class="form-control" id="Surname" placeholder="Enter your surname*">
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email Address:</label>
+              <input type="email" class="form-control" id="Email" placeholder="Enter your email address*">
+            </div>
+            <div class="mb-3">
+              <label for="Import" class="form-label">Share something you like (optional)</label>
+              <input type="file" class="form-control" id="Import">
+            </div>
+            <div class="mb-3">
+              <label for="Date" class="form-label">Date of Birth:</label>
+              <input type="date" class="form-control" id="Date">
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="ShareInfo">
+              <label class="form-check-label" for="ShareInfo">I agree to share my information and personal thoughts (optional)</label>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="AcceptTerms">
+              <label class="form-check-label" for="AcceptTerms">I accept the legal terms and privacy policy</label>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  <script src="sourse.js"></script>
+</body>
+
+</html>
