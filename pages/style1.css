@@ -2,6 +2,7 @@
   filter: brightness(60%);
   opacity: 0.7;
 }
+
 .dark-mode {
   background-color: black;
   color: white;
@@ -82,6 +83,7 @@ body.dark-mode .dropdown-menu a:hover {
 .borderless-card {
   border: none !important;
 }
+
 .secondfooter {
   background-color: rgba(212, 209, 209, 0.586);
   text-align: center;
@@ -107,7 +109,7 @@ body.dark-mode .dropdown-menu a:hover {
   transition: all .5s ease-in-out;
 }
 
-.padding{
+.padding {
   padding-right: 5%;
 }
 
@@ -121,10 +123,13 @@ body.dark-mode .dropdown-menu a:hover {
   src: url("../fonts/static/Montserrat-Bold.ttf");
 }
 
-p, a {
+p,
+a {
   font-family: 'rMedium';
 }
 
-h1, h2, h3 {
-  font-family: "rBold"; 
+h1,
+h2,
+h3 {
+  font-family: "rBold";
 }

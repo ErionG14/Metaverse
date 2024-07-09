@@ -5,14 +5,12 @@ $(document).ready(function () {
     $('.nav-link, .navbar-brand, .navbar-toggler-icon').toggleClass('text-white-in-dark-mode');
     $('.bi').toggleClass('icon-white-in-dark-mode');
     $('.card, .dropdown-menu').toggleClass('dark-mode');
-    
+
     if ($('body').hasClass('dark-mode')) {
       $(this).html('<i class="bi bi-brightness-high white-icon"></i>');
-      logoImage.src = '../Photos/meta-logo dark-mode.png';
     } else {
       $(this).html('<i class="bi bi-moon"></i>');
       $('.card').removeClass('dark-mode');
-      logoImage.src = '../Photos/meta-icon.jpg';
     }
   });
 
