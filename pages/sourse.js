@@ -1,28 +1,20 @@
 $(document).ready(function () {
   $('.toggle-mode').on('click', function () {
     $('body').toggleClass('dark-mode');
-    $('.navbar').toggleClass('navbar-dark-mode'); // Toggle the dark mode class on the navbar
+    $('.navbar').toggleClass('navbar-dark-mode');
     $('.nav-link, .navbar-brand, .navbar-toggler-icon').toggleClass('text-white-in-dark-mode');
-    $('.bi').toggleClass('icon-white-in-dark-mode'); // Toggle the color for icons
-    $('.card').addClass('dark-mode');
-    // Change the icon to a sun if dark mode is active
+    $('.bi').toggleClass('icon-white-in-dark-mode');
+    $('.card, .dropdown-menu').toggleClass('dark-mode');
+    
     if ($('body').hasClass('dark-mode')) {
       $(this).html('<i class="bi bi-brightness-high white-icon"></i>');
-      // Add dark mode styles to cards
+      logoImage.src = '../Photos/meta-logo dark-mode.png';
     } else {
-      // Change back to the moon icon if dark mode is not active
       $(this).html('<i class="bi bi-moon"></i>');
-      $('.card').removeClass('dark-mode'); // Remove dark mode styles from cards
+      $('.card').removeClass('dark-mode');
+      logoImage.src = '../Photos/meta-icon.jpg';
     }
   });
-
-  const logoImage = document.getElementById('logo');
-  if ($('body').hasClass('dark-mode')) {
-    logoImage.src = '../Photos/meta-logo dark-mode.png';
-  } else {
-    logoImage.src = '../Photos/meta-icon.jpg';
-  }
-
 
 
   $('.Print').click(function () {
