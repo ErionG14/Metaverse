@@ -83,7 +83,7 @@ body.dark-mode .dropdown-menu a:hover {
   border: none !important;
 }
 
-.secondfooter {
+.footer {
   background-color: rgba(212, 209, 209, 0.586);
   text-align: center;
   padding: 20px;
@@ -98,14 +98,20 @@ body.dark-mode .dropdown-menu a:hover {
   color: white;
 }
 
-#secondfooterlinks {
+#footerlinks {
   text-decoration: none;
   color: rgb(173, 193, 230);
 }
 
-#secondfooterlinks:hover {
+#footerlinks:hover {
   color: rgb(83, 133, 239);
   transition: all .5s ease-in-out;
+}
+
+.secondfooter {
+  background-color: rgba(212, 209, 209, 0.586);
+  text-align: center;
+  padding: 3%;
 }
 
 .padding {
